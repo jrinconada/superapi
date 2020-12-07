@@ -7,11 +7,11 @@ const client = new Client({
   secret: process.env.FAUNADB_SERVER_SECRET,
 })
 
-const handler = async (event) => {
+const handler = async (collection, event) => {
   const { id } = event
-  console.log(`Function 'read' invoked. Read id: ${id}`)
+  console.log(`Function 'delete' invoked. delete id: ${id}`)
   return client
-    .query(query.Get(query.Ref(`classes/tonterias/${id}`)))
+    .query(query.Delete(query.Ref(`classes/${collection}/${id}`)))
     .then((response) => {
       console.log('success', response)
       return {

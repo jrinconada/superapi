@@ -11,14 +11,14 @@ const handler = async (event, context) => {
   switch (event.httpMethod) {
     case 'GET':
       // e.g. GET /.netlify/functions/fauna-crud
-      if (segments.length === 0) {
-        return readAllRoute.handler(event, context)
+      if (segments.length === 1) {
+        return readAllRoute.handler(segments[0], event, context)
       }
       // e.g. GET /.netlify/functions/fauna-crud/123456
-      if (segments.length === 1) {
+      if (segments.length === 2) {
         const [id] = segments
-        event.id = id
-        return readRoute.handler(event, context)
+        event.id = segments[1]
+        return readRoute.handler(segments[0], event, context)
       }
       return {
         statusCode: 500,
@@ -28,13 +28,13 @@ const handler = async (event, context) => {
 
     case 'POST':
       // e.g. POST /.netlify/functions/fauna-crud with a body of key value pair objects, NOT strings
-      return createRoute.handler(event, context)
+      return createRoute.handler(segments[0], event, context)
     case 'PUT':
       // e.g. PUT /.netlify/functions/fauna-crud/123456 with a body of key value pair objects, NOT strings
       if (segments.length === 1) {
         const [id] = segments
         event.id = id
-        return updateRoute.handler(event, context)
+        return updateRoute.handler(segments[0], event, context)
       }
       return {
         statusCode: 500,
@@ -46,7 +46,7 @@ const handler = async (event, context) => {
       if (segments.length === 1) {
         const [id] = segments
         event.id = id
-        return deleteRoute.handler(event, context)
+        return deleteRoute.handler(segments[0], event, context)
       }
       return {
         statusCode: 500,

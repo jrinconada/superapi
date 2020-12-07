@@ -7,11 +7,12 @@ const client = new Client({
   secret: process.env.FAUNADB_SERVER_SECRET,
 })
 
-const handler = async (event) => {
+const handler = async (collection, event) => {
+  const data = JSON.parse(event.body)
   const { id } = event
-  console.log(`Function 'delete' invoked. delete id: ${id}`)
+  console.log(`Function 'update' invoked. update id: ${id}`)
   return client
-    .query(query.Delete(query.Ref(`classes/items/${id}`)))
+    .query(query.Update(query.Ref(`classes/${collection}/${id}`), { data }))
     .then((response) => {
       console.log('success', response)
       return {
