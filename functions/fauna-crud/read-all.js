@@ -19,9 +19,12 @@ const handler = async () => {
       })
       // then query the refs
       return client.query(getAllItemsDataQuery).then((ret) => {
+          const result = ret.map((item) => {
+              return item.data
+          })
         return {
           statusCode: 200,
-          body: JSON.stringify(ret),
+          body: JSON.stringify(result),
         }
       })
     })

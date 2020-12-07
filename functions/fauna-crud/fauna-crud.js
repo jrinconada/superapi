@@ -5,7 +5,7 @@ const readAllRoute = require('./read-all')
 const updateRoute = require('./update')
 
 const handler = async (event, context) => {
-  const path = event.path.replace(/\.netlify\/functions\/[^/]+/, '')
+  const path = event.path.replace(/api\/[^/]+/, '')
   const segments = path.split('/').filter(Boolean)
 
   switch (event.httpMethod) {
