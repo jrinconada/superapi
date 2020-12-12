@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Post Malone",
+        "genre": "Pop Trap",
+        "pic": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/07/11/15313304669358.jpg"
+    }, {
+        "name": "Young Beef",
+        "genre": "Trap quinqui",
+        "pic": "https://i1.wp.com/secretolivo.com/wp-content/uploads/2017/02/beefdeffffff-e1499823728670.jpg"
+    }, {
+        "name": "Rosalia",
+        "genre": "Trap flamenco",
+        "pic": "https://i.avoz.es/sc/rMsptQU3g42HxOaAATfHlHatfdU=/x/2018/11/07/00121541584284025196450/Foto/rosalia.jpg"
+    }, {
+        "name": "Lil Peep",
+        "genre": "Emo Trap",
+        "pic": "https://ep01.epimg.net/cultura/imagenes/2017/11/16/actualidad/1510829249_141167_1510830873_noticia_normal_recorte1.jpg"
+    }, {
+        "name": "Kinder Malo",
+        "genre": "Trap irónico",
+        "pic": "https://www.elnacional.cat/uploads/s1/96/93/77/7/kinder-malo2.jpeg"
+    }, {
+        "name": "Bad Bunny",
+        "genre": "Reguetrap",
+        "pic": "https://www.ecestaticos.com/imagestatic/clipping/3c9/ffe/3c9ffe3f56fb218b0585d8e3264126dd/bad-bunny-la-supernova-del-trap-latino.jpg"
+    }, {
+        "name": "Ghostemane",
+        "genre": "Trap metal",
+        "pic": "https://3.bp.blogspot.com/-N-b_69Ze6iE/Wk8n6Twl8YI/AAAAAAAADJU/k2P7Jt5viG8xRCSN_fMLMEelSWMVJD4ZACLcBGAs/s1600/DN7K5S9X4AcRJA3.jpg"
+    }, {
+        "name": "6ix9ine",
+        "genre": "Trap payaso",
+        "pic": "https://img.europapress.es/fotoweb/fotonoticia_20181123213058_640.jpg"
+    }, {
+        "name": "C. Tangana",
+        "genre": "Trap latino",
+        "pic": "http://as01.epimg.net/epik/imagenes/2018/08/15/portada/1534335409_497415_1534335673_noticia_normal.jpg"
+    }, {
+        "name": "Don Patricio",
+        "genre": "Trap playero",
+        "pic": "https://fleekmag.com/wp-content/uploads/2017/04/don-patricio-mi-fruta-favorita.jpg"
+    }, {
+        "name": "Billie Eilish",
+        "genre": "Trap sombrío",
+        "pic": "https://www.binaural.es/wp-content/uploads/2019/03/billie.jpg"
+    }
+]
