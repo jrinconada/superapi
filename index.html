@@ -18,6 +18,12 @@
 		<li>POST <em>/api/register</em> para añadir un nuevo usuario con los parámetros <em>"user"</em> y <em>"pass"</em> de tipo <strong>string</strong></li>
 		<li>POST <em>/api/login</em> para loguear un usuario con los parámetros <em>"user"</em> y <em>"pass"</em> de tipo <strong>string</strong></li>
 	</ul>
+	<h1>Sistema de Seguridad</h1>
+	<ul>
+		<li>GET <em>/api/log</em> para obtener una lista de eventos como un <strong>array</strong> de <strong>object</strong> con un <strong>string</strong> y un <strong>number</strong></li>
+		<li>GET <em>/api/state</em> para obtener el estado actual como un <strong>string</strong> que puede ser <em>"on"</em>, <em>"off"</em> o <em>"alert"</em></li>
+		<li>PUT <em>/api/state</em> para modificar el estado con el parámetro <em>"state"</em> de tipo <strong>string</strong></li>
+	</ul>
 	<h1>Bases de datos</h1>
 	<h2>Tonterías</h2>
 	<ul>
